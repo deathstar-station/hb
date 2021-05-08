@@ -28,7 +28,7 @@ namespace Hepsiburada.Presentation
 
                 Console.WriteLine($"\r\n\r\n {Path.GetFileName(file)} reading... \r\n\r\n");
 
-                var lines = (await File.ReadAllTextAsync(file)).Split('\n');
+                var lines = (await File.ReadAllTextAsync(file)).Split(Environment.NewLine);
 
                 foreach (var line in lines)
                 {
